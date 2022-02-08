@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GuiAdminController">
+  <tabs>
+    <Tab id="tabUtenti" text="UTENTI">
+      <content>
+        <AnchorPane id="anchUtenti" minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="700.0">
+               <children>
+                  <Label layoutX="210.0" layoutY="41.0" text="AGGIUNGI" />
+                  <Label layoutX="534.0" layoutY="41.0" text="MODIFICA" />
+                  <TableView id="tabellaUtenti" fx:id="tableViewUser" layoutX="37.0" layoutY="311.0" prefHeight="210.0" prefWidth="720.0">
+                    <columns>
+                      <TableColumn id="colonnaNome" fx:id="colonnaNome" prefWidth="135.0" text="Nome" />
+                      <TableColumn id="colonnaCognome" fx:id="colonnaCognome" prefWidth="135.0" text="Cognome" />
+                        <TableColumn id="colonnaSesso" fx:id="colonnaSesso" prefWidth="100.0" text="Sesso" />
+                        <TableColumn id="colonnaCodiceFiscale" fx:id="colonnaCodiceFiscale" prefWidth="190.0" text="Codice Fiscale" />
+                        <TableColumn id="colonnaDataNascita" fx:id="colonnaDataNascita" prefWidth="158.0" text="Data di Nascita" />
+                    </columns>
+                  </TableView>
+                  <TextField id="txtNomeUtente" fx:id="txtNomeUtente" alignment="CENTER" layoutX="160.0" layoutY="68.0" onAction="#aggiungiUtente" promptText="Nome" />
+                  <TextField id="txtCognomeUtente" fx:id="txtCognomeUtente" alignment="CENTER" layoutX="160.0" layoutY="102.0" onAction="#aggiungiUtente" promptText="Cognome" />
+                  <TextField id="txtSessoUtente" fx:id="txtSessoUtente" alignment="CENTER" layoutX="160.0" layoutY="139.0" onAction="#aggiungiUtente" promptText="Sesso" />
+                  <TextField id="txtCodiceFiscaleUtente" fx:id="txtCodiceFiscaleUtente" alignment="CENTER" layoutX="160.0" layoutY="175.0" onAction="#aggiungiUtente" promptText="Codice Fiscale" />
+                  <TextField id="txtDataNascitaUtente" fx:id="txtDataNascitaUtente" alignment="CENTER" layoutX="160.0" layoutY="214.0" onAction="#aggiungiUtente" promptText="Data di Nascita" />
+                  <Button id="bttAggiungiUtente" fx:id="bttAggiungiUtente" layoutX="207.0" layoutY="252.0" mnemonicParsing="false" onAction="#aggiungiUtente" text="Aggiungi" />
+                  <Label layoutX="444.0" layoutY="70.0" text="Inserire CODICE FISCALE utente da modificare" />
+                  <TextField id="cfUtente" fx:id="cfUtente" layoutX="485.0" layoutY="87.0" onAction="#modificaUtente" />
+                  <Label layoutX="484.0" layoutY="128.0" text="Scegliere attributo da modificare" />
+                  <ComboBox id="combUser" fx:id="combUser" layoutX="490.0" layoutY="150.0" prefWidth="150.0" />
+                  <TextField id="nuovoAttributoUtente" fx:id="nuovoAttributoUtente" alignment="CENTER" layoutX="485.0" layoutY="186.0" onAction="#modificaUtente" promptText="Nuovo Attributo" />
+                  <Button id="bttModificaUtente" fx:id="bttModificaUtente" layoutX="532.0" layoutY="252.0" mnemonicParsing="false" onAction="#modificaUtente" text="Modifica" />
+                  <Separator layoutX="397.0" layoutY="50.0" orientation="VERTICAL" prefHeight="200.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab id="tabWorkspace" text="WORKSPACE">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="383.0" prefWidth="624.0">
+               <children>
+                  <Label layoutX="202.0" layoutY="42.0" text="AGGIUNGI" />
+                  <Label layoutX="532.0" layoutY="42.0" text="MODIFICA" />
+                  <TableView id="tabellaWorkspace" fx:id="tableViewWorkspace" layoutX="40.0" layoutY="312.0" prefHeight="210.0" prefWidth="720.0">
+                     <columns>
+                        <TableColumn id="colonnaIdWorkspace" fx:id="colonnaIdWorkspace" prefWidth="150.0" text="Id" />
+                        <TableColumn id="colonnaDescrizioneWorkspace" fx:id="colonnaDescrizioneWorkspace" minWidth="8.0" prefWidth="568.0" text="Descrizione" />
+                     </columns>
+                  </TableView>
+                  <TextField id="txtIdWorkspace" fx:id="txtIdWorkspace" alignment="CENTER" layoutX="152.0" layoutY="80.0" onAction="#aggiungiWorkspace" promptText="Id" />
+                  <TextField id="txtDescrizioneWorkspace" fx:id="txtDescrizioneWorkspace" alignment="CENTER" layoutX="152.0" layoutY="116.0" onAction="#aggiungiWorkspace" promptText="Descrizione" />
+                  <TextField id="txtListaAttivitaWorkspace" fx:id="txtListaAttivitaWorkspace" alignment="CENTER" layoutX="152.0" layoutY="151.0" onAction="#aggiungiWorkspace" promptText="Lista Attivita" />
+                  <Button id="bttAggiungiWorkspace" fx:id="bttAggiungiWorkspace" layoutX="199.0" layoutY="238.0" mnemonicParsing="false" onAction="#aggiungiWorkspace" text="Aggiungi" />
+                  <Label layoutX="465.0" layoutY="71.0" text="Inserire ID workspace da modificare" />
+                  <TextField id="idWorkspace" fx:id="idWorkspace" layoutX="482.0" layoutY="88.0" />
+                  <Label layoutX="481.0" layoutY="129.0" text="Scegliere attributo da modificare" />
+                  <ComboBox id="combWorkspace" fx:id="combWorkspace" layoutX="487.0" layoutY="151.0" prefWidth="150.0" />
+                  <TextField id="nuovoAttributoWorkspace" fx:id="nuovoAttributoWorkspace" alignment="CENTER" layoutX="482.0" layoutY="187.0" onAction="#modificaWorkspace" promptText="Nuovo Attributo" />
+                  <Button id="bttModificaWorkspace" fx:id="bttModificaWorkspace" layoutX="529.0" layoutY="225.0" mnemonicParsing="false" onAction="#modificaWorkspace" text="Modifica" />
+                  <Button fx:id="bttnRimuoviListaWorkspace" layoutX="518.0" layoutY="258.0" mnemonicParsing="false" onAction="#rimuoviListaWorkspace" text="Rimuovi lista" />
+                  <Separator layoutX="397.0" layoutY="51.0" orientation="VERTICAL" prefHeight="200.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab id="tabAttivita" text="ATTIVITA'">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="383.0" prefWidth="624.0">
+               <children>
+                  <Label layoutX="209.0" layoutY="46.0" text="AGGIUNGI" />
+                  <Label layoutX="532.0" layoutY="44.0" text="MODIFICA" />
+                  <TableView id="tabellaAttivita" fx:id="tableViewAttivita" layoutX="40.0" layoutY="313.0" prefHeight="210.0" prefWidth="720.0">
+                     <columns>
+                        <TableColumn id="colonnaIdAttivita" fx:id="colonnaIdAttivita" minWidth="80.0" text="Id" />
+                        <TableColumn id="colonnaDescrizioneAttivita" fx:id="colonnaDescrizioneAttivita" prefWidth="200.0" text="Descrizione" />
+                        <TableColumn id="colonnaDurata" fx:id="colonnaDurata" prefWidth="90.0" text="Durata" />
+                        <TableColumn id="colonnaGiornoDisponibile" fx:id="colonnaGiornoDisponibile" prefWidth="150.0" text="Giorno Disponibile" />
+                        <TableColumn id="colonnaDateDisponibili" fx:id="colonnaDateDisponibili" prefWidth="198.0" text="Date Disponibili" />
+                     </columns>
+                  </TableView>
+                  <TextField id="txtIdAttivita" fx:id="txtIdAttivita" alignment="CENTER" layoutX="159.0" layoutY="74.0" onAction="#aggiungiAttivita" promptText="Id" />
+                  <TextField id="txtDescrizioneAttivita" fx:id="txtDescrizioneAttivita" alignment="CENTER" layoutX="159.0" layoutY="108.0" onAction="#aggiungiAttivita" promptText="Descrizione" />
+                  <TextField id="txtDurataAttivita" fx:id="txtDurataAttivita" alignment="CENTER" layoutX="159.0" layoutY="145.0" onAction="#aggiungiAttivita" promptText="Durata" />
+                  <TextField id="txtGiornoDisponibileAttivita" fx:id="txtGiornoDisponibileAttivita" alignment="CENTER" layoutX="159.0" layoutY="181.0" onAction="#aggiungiAttivita" promptText="Giorno Disponibile" />
+                  <TextField id="txtDateDisponibiliAttivita" fx:id="txtDateDisponibiliAttivita" alignment="CENTER" layoutX="159.0" layoutY="220.0" onAction="#aggiungiAttivita" promptText="Date Disponibili" />
+                  <Button id="bttAggiungiAttivita" fx:id="bttAggiungiAttivita" layoutX="206.0" layoutY="262.0" mnemonicParsing="false" onAction="#aggiungiAttivita" text="Aggiungi" />
+                  <Label layoutX="477.0" layoutY="74.0" text="Inserire ID attività da modificare" />
+                  <TextField id="idAttivita" fx:id="idAttivita" layoutX="483.0" layoutY="90.0" />
+                  <Label layoutX="482.0" layoutY="131.0" text="Scegliere attributo da modificare" />
+                  <ComboBox id="combAttivita" fx:id="combAttivita" layoutX="488.0" layoutY="153.0" prefWidth="150.0" />
+                  <TextField id="nuovoAttributoAttivita" fx:id="nuovoAttributoAttivita" alignment="CENTER" layoutX="483.0" layoutY="189.0" onAction="#modificaAttivita" promptText="Nuovo Attributo" />
+                  <Button id="bttModificaAttivita" fx:id="bttModificaAttivita" layoutX="529.0" layoutY="228.0" mnemonicParsing="false" onAction="#modificaAttivita" text="Modifica" />
+                  <Button fx:id="bttnRimuoviListaAttivita" layoutX="520.0" layoutY="260.0" mnemonicParsing="false" onAction="#rimuoviListaAttivita" text="Rimuovi lista" />
+                  <Separator layoutX="397.0" layoutY="65.0" orientation="VERTICAL" prefHeight="200.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab id="tabPreferenze" text="PREFERENZE">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="383.0" prefWidth="624.0">
+               <children>
+                  <Label layoutX="367.0" layoutY="47.0" text="MODIFICA" />
+                  <TableView id="tabellaPreferenze" fx:id="tableViewPreferenze" layoutX="40.0" layoutY="311.0" prefHeight="210.0" prefWidth="720.0">
+                     <columns>
+                        <TableColumn fx:id="colonnaCfUtente" prefWidth="160.0" text="Codice Fiscale Utente" />
+                        <TableColumn fx:id="colonnaDescrizioneWorkspacePref" prefWidth="110.0" text="Workspace" />
+                        <TableColumn fx:id="colonnaDescrizioneAttivitaPref" prefWidth="130.0" text="Attività" />
+                        <TableColumn fx:id="colonnaData" prefWidth="70.0" text="Data" />
+                        <TableColumn fx:id="colonnaOrario" prefWidth="70.0" text="Orario" />
+                        <TableColumn fx:id="colonnaNoteAggiuntive" prefWidth="178.0" text="Note Aggiuntive" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="227.0" layoutY="76.0" text="Inserire CF UTENTE e ATTIVITA' di cui  modificare le preferenze" />
+                  <Label layoutX="309.0" layoutY="133.0" text="Scegliere attributo da modificare" />
+                  <ComboBox id="combPreferenze" fx:id="combPreferenze" layoutX="326.0" layoutY="157.0" prefWidth="150.0" />
+                  <TextField id="nuovoAttributoPreferenze" fx:id="nuovoAttributoPreferenze" alignment="CENTER" layoutX="321.0" layoutY="193.0" onAction="#modificaPreferenze" promptText="Nuovo Attributo" />
+                  <Button id="bttModificaPreferenze" fx:id="bttModificaPreferenze" layoutX="368.0" layoutY="243.0" mnemonicParsing="false" onAction="#modificaPreferenze" text="Modifica" />
+                  <ComboBox id="combCfUtentePreferenze" fx:id="combCfUtentePreferenze" layoutX="234.0" layoutY="94.0" onAction="#setComboboxAttivitaUtente" prefWidth="150.0" />
+                  <ComboBox id="combAttivitaUtentePreferenze" fx:id="combAttivitaUtentePreferenze" layoutX="401.0" layoutY="94.0" prefWidth="150.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

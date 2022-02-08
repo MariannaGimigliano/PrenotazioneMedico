@@ -1,0 +1,44 @@
+[
+  {
+    "nome": "Massimo",
+    "cognome": "dff",
+    "sesso": "M",
+    "codiceFiscale": "RNDMSM00E14A944O",
+    "dataDiNascita": "2000/5/14"
+  },
+  {
+    "nome": "Marianna",
+    "cognome": "Gimigliano",
+    "sesso": "F",
+    "codiceFiscale": "MRNGMG00A24A944F",
+    "dataDiNascita": "2000/10/13"
+  },
+  {
+    "nome": "Luca",
+    "cognome": "Rossi",
+    "sesso": "M",
+    "codiceFiscale": "LCARSS85T58H543L",
+    "dataDiNascita": "1985/04/12"
+  },
+  {
+    "nome": "Filippo",
+    "cognome": "Rocchi",
+    "sesso": "M",
+    "codiceFiscale": "FLPRCC98F27F493G",
+    "dataDiNascita": "1998/11/02"
+  },
+  {
+    "nome": "Francesca",
+    "cognome": "Mazzotti",
+    "sesso": "F",
+    "codiceFiscale": "FRCMZT67G462P890R",
+    "dataDiNascita": "1967/02/23"
+  },
+  {
+    "nome": "s",
+    "cognome": "s",
+    "sesso": "s",
+    "codiceFiscale": "s",
+    "dataDiNascita": "s"
+  }
+]

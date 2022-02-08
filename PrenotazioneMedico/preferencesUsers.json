@@ -1,0 +1,66 @@
+[
+  {
+    "cfUtente": "MRNGMG00A24A944F",
+    "descrizioneWorkspace": "Medico di Base",
+    "descrizioneAttivita": "Prescrizione Medicinali",
+    "data": "02/09",
+    "orario": "12:30",
+    "noteAggiuntive": "Necessito di una nuova ricetta"
+  },
+  {
+    "cfUtente": "RNDMSM00E14A944O",
+    "descrizioneWorkspace": "Medico di Base",
+    "descrizioneAttivita": "Prescrizione Medicinali",
+    "data": "19/08",
+    "orario": "16:00",
+    "noteAggiuntive": "Potrei arrivare 5 minuti in ritardo"
+  },
+  {
+    "cfUtente": "MRNGMG00A24A944F",
+    "descrizioneWorkspace": "Cardiologo",
+    "descrizioneAttivita": "Risonanza Magnetica Cardiaca",
+    "data": "20/09",
+    "orario": "09:15",
+    "noteAggiuntive": "/"
+  },
+  {
+    "cfUtente": "FLPRCC98F27F493G",
+    "descrizioneWorkspace": "Medico Sportivo",
+    "descrizioneAttivita": "Test da Sforzo",
+    "data": "07/09",
+    "orario": "15:05",
+    "noteAggiuntive": "/"
+  },
+  {
+    "cfUtente": "FRCMZT67G462P890R",
+    "descrizioneWorkspace": "Medico di Base",
+    "descrizioneAttivita": "Prescrizione Medicinali",
+    "data": "09/09",
+    "orario": "08:45",
+    "noteAggiuntive": "Medicinale per pressione"
+  },
+  {
+    "cfUtente": "LCARSS85T58H543L",
+    "descrizioneWorkspace": "Radiologo",
+    "descrizioneAttivita": "Radiologia",
+    "data": "03/09",
+    "orario": "12:00",
+    "noteAggiuntive": "Possibile frattura del polso"
+  },
+  {
+    "cfUtente": "FLPRCC98F27F493G",
+    "descrizioneWorkspace": "Cardiologo",
+    "descrizioneAttivita": "Risonanza Magnetica Cardiaca",
+    "data": "20/09",
+    "orario": "09:15",
+    "noteAggiuntive": "Visita urgente"
+  },
+  {
+    "cfUtente": "RNDMSM00E14A944O",
+    "descrizioneWorkspace": "Cardiologo",
+    "descrizioneAttivita": "Risonanza Magnetica Cardiaca",
+    "data": "30/08",
+    "orario": "s",
+    "noteAggiuntive": "s"
+  }
+]

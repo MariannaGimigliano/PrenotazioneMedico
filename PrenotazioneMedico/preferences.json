@@ -1,0 +1,18 @@
+[
+  {
+    "cfUtente": "RNDMSM00E14A944O",
+    "descrizioneWorkspace": "Medico di Base",
+    "descrizioneAttivita": "Prescrizione Medicinali",
+    "data": "19/08",
+    "orario": "16:00",
+    "noteAggiuntive": "Potrei arrivare 5 minuti in ritardo"
+  },
+  {
+    "cfUtente": "RNDMSM00E14A944O",
+    "descrizioneWorkspace": "Cardiologo",
+    "descrizioneAttivita": "Risonanza Magnetica Cardiaca",
+    "data": "30/08",
+    "orario": "s",
+    "noteAggiuntive": "s"
+  }
+]

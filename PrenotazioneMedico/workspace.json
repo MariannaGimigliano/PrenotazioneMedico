@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "descrizione": "Medico di Base",
+    "listaAttivita": [
+      {
+        "id": 1,
+        "descrizione": "Prescrizione Medicinali",
+        "durata": 10,
+        "giornoDisponibile": "Giovedì",
+        "dateDisponibili": [
+          "19/08",
+          "26/08",
+          "02/09",
+          "09/09"
+        ]
+      },
+      {
+        "id": 3,
+        "descrizione": "Visita per Malattia",
+        "durata": 20,
+        "giornoDisponibile": "Giovedi",
+        "dateDisponibili": [
+          "29/08",
+          "05/09",
+          "12/09"
+        ]
+      },
+      {
+        "id": 4,
+        "descrizione": "Visita di Controllo Periodica",
+        "durata": 15,
+        "giornoDisponibile": "Sabato",
+        "dateDisponibili": [
+          "24/08",
+          "31/08",
+          "07/09"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "descrizione": "Cardiologo",
+    "listaAttivita": [
+      {
+        "id": 5,
+        "descrizione": "Elettrocardiogramma",
+        "durata": 30,
+        "giornoDisponibile": "Sabato",
+        "dateDisponibili": [
+          "24/08",
+          "07/09"
+        ]
+      },
+      {
+        "id": 6,
+        "descrizione": "Risonanza Magnetica Cardiaca",
+        "durata": 15,
+        "giornoDisponibile": "Lunedì",
+        "dateDisponibili": [
+          "30/08",
+          "06/09",
+          "20/09",
+          "04/10"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "descrizione": "Medico Sportivo",
+    "listaAttivita": [
+      {
+        "id": 2,
+        "descrizione": "Visita Sportivo-Agonistica",
+        "durata": 30,
+        "giornoDisponibile": "Mercoledi",
+        "dateDisponibili": [
+          "21/08",
+          "28/08",
+          "04/09"
+        ]
+      },
+      {
+        "id": 8,
+        "descrizione": "Test da Sforzo",
+        "durata": 25,
+        "giornoDisponibile": "Martedì",
+        "dateDisponibili": [
+          "31/08",
+          "07/09",
+          "14/09",
+          "05/10"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "descrizione": "Radiologo",
+    "listaAttivita": [
+      {
+        "id": 7,
+        "descrizione": "Radiologia",
+        "durata": 5,
+        "giornoDisponibile": "Venerdì",
+        "dateDisponibili": [
+          "27/08",
+          "03/09",
+          "10/09"
+        ]
+      }
+    ]
+  }
+]
